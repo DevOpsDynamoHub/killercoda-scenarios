@@ -10,16 +10,25 @@
       {
         "title": "Step 1 — Verify services",
         "text": "step1.md",
-        "courseData": "background.sh",    // <-- runs once at scenario start
-        "code": "foreground.sh"           // <-- prints initial info to the terminal
+        "courseData": "background.sh",
+        "code": "foreground.sh"
       },
-      { "title": "Step 2 — Create the Ingress", "text": "step2.md" },
-      { "title": "Step 3 — Test routing", "text": "step3.md" }
+      {
+        "title": "Step 2 — Create the Ingress",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 — Test routing",
+        "text": "step3.md"
+      }
     ],
     "finish": { "text": "finish.md" },
     "assets": {
       "host01": [
-        { "file": "assets/multi-service-ingress.yaml", "target": "/root/multi-service-ingress.yaml" }
+        {
+          "file": "assets/multi-service-ingress.yaml",
+          "target": "/root/multi-service-ingress.yaml"
+        }
       ]
     }
   }
