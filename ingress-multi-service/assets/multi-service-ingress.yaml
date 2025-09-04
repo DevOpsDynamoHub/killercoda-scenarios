@@ -5,7 +5,6 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx        # <-- required so the controller picks it up
   rules:
   - host: app.example.com
     http:
