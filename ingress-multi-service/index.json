@@ -3,26 +3,32 @@
   "description": "Use a single Ingress to route / to frontend-service:80 and /api to backend-service:8080.",
   "difficulty": "beginner",
   "time": "15 minutes",
-  "backend": { "imageid": "kubernetes" },
+  "backend": {
+    "imageid": "kubernetes"
+  },
   "details": {
-    "intro": { "text": "intro.md" },
+    "intro": {
+      "text": "intro.md"
+    },
     "steps": [
       {
-        "title": "Step 1 — Verify services",
+        "title": "Step 1 - Verify services",
         "text": "step1.md",
         "courseData": "background.sh",
         "code": "foreground.sh"
       },
       {
-        "title": "Step 2 — Create the Ingress",
+        "title": "Step 2 - Create the Ingress",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 — Test routing",
+        "title": "Step 3 - Test routing",
         "text": "step3.md"
       }
     ],
-    "finish": { "text": "finish.md" },
+    "finish": {
+      "text": "finish.md"
+    },
     "assets": {
       "host01": [
         {
