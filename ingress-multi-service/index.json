@@ -15,7 +15,9 @@
     ],
     "finish": { "text": "finish.md" },
     "assets": {
-      "host01": ["assets/multi-service-ingress.yaml"]
+      "host01": [
+        { "file": "assets/multi-service-ingress.yaml", "target": "/root/multi-service-ingress.yaml" }
+      ]
     }
   }
 }
