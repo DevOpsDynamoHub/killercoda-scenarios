@@ -1,5 +1,5 @@
-# Ingress: Expose a Multi‑Service App
+# Expose Multi-Service App with Ingress
 
-Goal: Use **one Ingress** to route `/` to `frontend-service:80` and `/api` to `backend-service:8080`.
-
-Environment: A Kubernetes cluster with kubectl preconfigured. This scenario auto‑installs the NGINX Ingress Controller and preps frontend/backend services.
+In this scenario, you’ll learn how to use a single Kubernetes Ingress resource to route:
+- `/` → frontend-service
+- `/api` → backend-service
