@@ -1,3 +1,4 @@
-kubectl get deploy frontend-deploy backend-deploy
-kubectl rollout status deploy/frontend-deploy
-kubectl rollout status deploy/backend-deploy
+## Step 2 — Create the Ingress
+
+The ingress manifest has already been prepared for you in the VM at:
+
