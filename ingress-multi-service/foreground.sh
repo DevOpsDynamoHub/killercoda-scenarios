@@ -1,4 +1,10 @@
-#!/bin/bash
-# Runs in the terminal when the scenario starts
-echo "Welcome to the Ingress Multi-Service scenario!"
-echo "Kubernetes cluster is ready. Deployments and services will be created automatically."
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Environment snapshot:"
+kubectl get nodes -o wide || true
+echo
+echo "Services (should be created by setup):"
+kubectl get svc frontend-service backend-service || true
+echo
+echo "Next: verify in Step 1, then apply the ingress in Step 2."
