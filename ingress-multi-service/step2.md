@@ -1,41 +1,13 @@
 ### Step 2 — Create the Ingress
 
-Create `multi-service-ingress.yaml` with the following:
-
-```yaml
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: multi-service-ingress
-spec:
-  rules:
-  - host: app.example.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: frontend-service
-            port:
-              number: 80
-      - path: /api
-        pathType: Prefix
-        backend:
-          service:
-            name: backend-service
-            port:
-              number: 8080
-```
+The manifest is already on the VM at `/root/multi-service-ingress.yaml`.
 
 Apply it:
-
 ```bash
-kubectl apply -f multi-service-ingress.yaml
-```
+kubectl apply -f /root/multi-service-ingress.yaml
+```{{execute}}
 
-Inspect it if needed:
-
+Inspect it:
 ```bash
 kubectl describe ingress multi-service-ingress
-```
+```{{execute}}
