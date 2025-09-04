@@ -1,0 +1,14 @@
+{
+  "title": "Expose Multi\u2011Service App with Ingress",
+  "description": "Route / to frontend-service:80 and /api to backend-service:8080 using a single Ingress.",
+  "difficulty": "beginner",
+  "details": {
+    "steps": [
+      "step1.md",
+      "step2.md",
+      "step3.md"
+    ],
+    "intro": "intro.md",
+    "finish": "finish.md"
+  }
+}
