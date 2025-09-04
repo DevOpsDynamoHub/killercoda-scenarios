@@ -1,6 +1,6 @@
 ## Step 1: Verify the services exist
 
-Check that the services are created:
+First, check that the two services are available:
 
 ```bash
 kubectl get svc frontend-service backend-service
