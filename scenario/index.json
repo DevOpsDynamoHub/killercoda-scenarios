@@ -1,18 +1,21 @@
 {
   "title": "Ingress for Multi-Service Application",
-  "description": "Route traffic to frontend and backend services via a single Ingress.",
+  "description": "Use a single Ingress to route traffic to frontend and backend services.",
+  "backend": { "imageid": "kubernetes" },
   "details": {
+    "intro": { "text": "intro.md" },
     "steps": [
       { "title": "Verify Services", "text": "step1.md" },
-      { "title": "Create the Ingress", "text": "step2.md" },
-      { "title": "Test the Ingress Routing", "text": "step3.md" }
-    ]
-  },
-  "environment": {
-    "showdashboard": true,
-    "uilayout": "terminal"
-  },
-  "backend": {
-    "imageid": "kubernetes"
+      { "title": "Create Ingress", "text": "step2.md" },
+      { "title": "Test Routing", "text": "step3.md" }
+    ],
+    "finish": { "text": "finish.md" },
+    "assets": {
+      "host01": [
+        { "file": "assets/multi-service-ingress.yaml", "target": "/root/multi-service-ingress.yaml" }
+      ]
+    },
+    "code": "foreground.sh",
+    "background": "background.sh"
   }
 }
