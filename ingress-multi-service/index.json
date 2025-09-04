@@ -14,10 +14,14 @@
       { "title": "Step 3 — Test routing", "text": "step3.md" }
     ],
     "finish": { "text": "finish.md" },
+
     "assets": {
       "host01": [
         { "file": "assets/multi-service-ingress.yaml", "target": "/root/multi-service-ingress.yaml" }
       ]
-    }
+    },
+
+    "background": "background.sh",
+    "foreground": "foreground.sh"
   }
 }
