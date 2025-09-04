@@ -3,25 +3,24 @@
   "description": "Use a single Ingress to route / to frontend-service:80 and /api to backend-service:8080.",
   "difficulty": "beginner",
   "time": "15 minutes",
-
   "backend": { "imageid": "kubernetes" },
-
   "details": {
     "intro": { "text": "intro.md" },
     "steps": [
-      { "title": "Step 1 — Verify services", "text": "step1.md" },
+      {
+        "title": "Step 1 — Verify services",
+        "text": "step1.md",
+        "courseData": "background.sh",    // <-- runs once at scenario start
+        "code": "foreground.sh"           // <-- prints initial info to the terminal
+      },
       { "title": "Step 2 — Create the Ingress", "text": "step2.md" },
       { "title": "Step 3 — Test routing", "text": "step3.md" }
     ],
     "finish": { "text": "finish.md" },
-
     "assets": {
       "host01": [
         { "file": "assets/multi-service-ingress.yaml", "target": "/root/multi-service-ingress.yaml" }
       ]
-    },
-
-    "background": "background.sh",
-    "foreground": "foreground.sh"
+    }
   }
 }
