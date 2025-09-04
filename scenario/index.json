@@ -1,0 +1,18 @@
+{
+  "title": "Ingress for Multi-Service Application",
+  "description": "Route traffic to frontend and backend services via a single Ingress.",
+  "details": {
+    "steps": [
+      { "title": "Verify Services", "text": "step1.md" },
+      { "title": "Create the Ingress", "text": "step2.md" },
+      { "title": "Test the Ingress Routing", "text": "step3.md" }
+    ]
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
